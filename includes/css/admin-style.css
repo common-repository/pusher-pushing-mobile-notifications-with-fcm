@@ -1,0 +1,73 @@
+.pusher-container{
+    width: 75%;
+    background-color: #ffffff;
+    padding: 15px;
+    float: left;
+}
+div.pusher_right{
+    float: right;
+    width:20%;
+    padding: 10px;
+    background-color: white;
+}
+
+.pusher-container main {
+    max-width: 100%;
+    padding: 40px;
+    border: 1px solid rgba(0,0,0,.2);
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+}
+
+.pusher-container section {
+    display: none;
+    padding: 20px 0 0;
+    border-top: 1px solid #abc;
+}
+
+.pusher-container .none-imdb{
+    display: none;
+}
+
+
+
+.pusher-container label {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #abc;
+    border: 1px solid transparent;
+}
+
+.pusher-container label:before {
+    font-family: fontawesome;
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+.pusher-container label[for*='1']:before { content: '\f171'; }
+.pusher-container label[for*='2']:before { content: '\f1ea'; }
+.pusher-container label[for*='3']:before { content: '\f19a'; }
+.pusher-container label[for*='4']:before { content: '\f16c'; }
+
+
+.pusher-container label:hover {
+    color: #789;
+    cursor: pointer;
+}
+
+.pusher-container input:checked + label {
+    color: #0af;
+    border: 1px solid #abc;
+    border-top: 2px solid #0af;
+    border-bottom: 1px solid #fff;
+}
+
+.pusher-container #tab1:checked ~ #content1,
+.pusher-container #tab2:checked ~ #content2,
+.pusher-container #tab3:checked ~ #content3,
+.pusher-container #tab4:checked ~ #content4 {
+    display: block;
+}
